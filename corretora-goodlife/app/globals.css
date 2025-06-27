@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    height: 100%;
+    font-family: theme('fontFamily.lato');
+    scroll-behavior: smooth;
+    /* Applying antialiasing for better font rendering */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    min-height: 100%;
+    background-color: #fdfdfd; /* Cor de fundo do body: Branco Puro */
+    color: #2c3e50; /* Cor de texto padrão: Azul escuro quase preto */
+    /* Ligatures and kerning for Lato, if desired. Otherwise, antialiasing is covered by html section. */
+    /* font-feature-settings: 'liga' on, 'kern' on; */
+    /* text-rendering: optimizeLegibility; */
+  }
+
+  /* Você pode adicionar outros estilos base aqui, por exemplo:
+  h1, h2, h3, h4, h5, h6 {
+    font-family: theme('fontFamily.lato'); // Se quiser forçar a fonte em cabeçalhos, embora herde do body
+  }
+  */
+}
