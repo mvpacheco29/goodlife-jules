@@ -1,9 +1,25 @@
 import React from 'react';
 import type { Metadata } from 'next';
 
+const pageTitle = 'Ajuda e FAQ';
+const pageDescription = 'Encontre respostas para as perguntas mais frequentes sobre seguros de vida, viagem, planos odontológicos e nossos serviços na GoodLife Seguros.';
+const pagePath = '/ajuda';
+
 export const metadata: Metadata = {
-  title: 'Ajuda e FAQ - GoodLife Seguros',
-  description: 'Encontre respostas para as perguntas mais frequentes sobre seguros de vida, viagem, planos odontológicos e nossos serviços.',
+  title: pageTitle,
+  description: pageDescription,
+  alternates: {
+    canonical: pagePath,
+  },
+  openGraph: {
+    title: pageTitle,
+    description: pageDescription,
+    url: pagePath,
+  },
+  twitter: {
+    title: pageTitle,
+    description: pageDescription,
+  },
 };
 
 interface FAQItemProps {

@@ -2,9 +2,27 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
+const pageTitle = 'Plano Odontológico';
+const pageDescription = 'Cuide do seu sorriso com os Planos Odontológicos da GoodLife Seguros. Ampla rede credenciada e coberturas para toda a família.';
+const pagePath = '/seguros/odontologico';
+
 export const metadata: Metadata = {
-  title: 'Plano Odontológico - GoodLife Seguros',
-  description: 'Cuide do seu sorriso com os Planos Odontológicos da GoodLife Seguros. Ampla rede credenciada e coberturas para toda a família.',
+  title: pageTitle,
+  description: pageDescription,
+  alternates: {
+    canonical: pagePath,
+  },
+  openGraph: {
+    title: pageTitle,
+    description: pageDescription,
+    url: pagePath,
+    // images: ['/og-image-plano-odontologico.png'],
+  },
+  twitter: {
+    title: pageTitle,
+    description: pageDescription,
+    // images: ['/og-image-plano-odontologico.png'],
+  },
 };
 
 const CheckIcon = () => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6 text-green-500 mr-2"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>;

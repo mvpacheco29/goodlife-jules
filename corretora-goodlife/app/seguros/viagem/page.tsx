@@ -2,9 +2,27 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
+const pageTitle = 'Seguro Viagem';
+const pageDescription = 'Viaje com tranquilidade e segurança. Conheça os planos de Seguro Viagem da GoodLife Seguros para destinos nacionais e internacionais.';
+const pagePath = '/seguros/viagem';
+
 export const metadata: Metadata = {
-  title: 'Seguro Viagem - GoodLife Seguros',
-  description: 'Viaje com tranquilidade e segurança. Conheça os planos de Seguro Viagem da GoodLife Seguros para destinos nacionais e internacionais.',
+  title: pageTitle,
+  description: pageDescription,
+  alternates: {
+    canonical: pagePath,
+  },
+  openGraph: {
+    title: pageTitle,
+    description: pageDescription,
+    url: pagePath,
+    // images: ['/og-image-seguro-viagem.png'],
+  },
+  twitter: {
+    title: pageTitle,
+    description: pageDescription,
+    // images: ['/og-image-seguro-viagem.png'],
+  },
 };
 
 // Exemplo de ícone para benefício

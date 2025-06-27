@@ -70,7 +70,7 @@ const Header: React.FC = () => {
               </Link>
             )
           ))}
-          <Link href="https://wa.me/SEUNUMERO" target="_blank" rel="noopener noreferrer" className="bg-accent hover:bg-accent-hover text-white font-bold py-2 px-4 rounded-full transition duration-300">
+          <Link href={`https://wa.me/5511999998888?text=${encodeURIComponent("Olá! Gostaria de mais informações sobre os seguros da GoodLife Seguros.")}`} target="_blank" rel="noopener noreferrer" className="bg-accent hover:bg-accent-hover text-white font-bold py-2 px-4 rounded-full transition duration-300">
             Fale no WhatsApp
           </Link>
         </nav>
@@ -110,7 +110,7 @@ const Header: React.FC = () => {
               </Link>
             )
           ))}
-          <Link href="https://wa.me/SEUNUMERO" target="_blank" rel="noopener noreferrer" className="bg-accent hover:bg-accent-hover text-white font-bold py-3 px-6 rounded-full transition duration-300 mt-4 inline-block">
+          <Link href={`https://wa.me/5511999998888?text=${encodeURIComponent("Olá! Gostaria de mais informações sobre os seguros da GoodLife Seguros.")}`} target="_blank" rel="noopener noreferrer" className="bg-accent hover:bg-accent-hover text-white font-bold py-3 px-6 rounded-full transition duration-300 mt-4 inline-block">
             Fale no WhatsApp
           </Link>
         </nav>

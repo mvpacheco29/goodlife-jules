@@ -1,9 +1,27 @@
 import React from 'react';
 import type { Metadata } from 'next';
 
+const pageTitle = 'Sobre Nós';
+const pageDescription = 'Conheça a história, missão e valores da GoodLife Seguros, sua parceira em proteção e tranquilidade.';
+const pagePath = '/sobre-nos';
+
 export const metadata: Metadata = {
-  title: 'Sobre Nós - GoodLife Seguros',
-  description: 'Conheça a história, missão e valores da GoodLife Seguros, sua parceira em proteção e tranquilidade.',
+  title: pageTitle, // Será complementado pelo template no layout
+  description: pageDescription,
+  alternates: {
+    canonical: pagePath,
+  },
+  openGraph: {
+    title: pageTitle, // Específico para OG, sem o template do siteName
+    description: pageDescription,
+    url: pagePath,
+    // images: ['/og-image-sobre.png'], // Imagem OG específica para esta página, se houver
+  },
+  twitter: {
+    title: pageTitle,
+    description: pageDescription,
+    // images: ['/og-image-sobre.png'],
+  },
 };
 
 const SobreNosPage: React.FC = () => {

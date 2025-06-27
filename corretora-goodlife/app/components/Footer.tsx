@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
             <div className="mt-6">
               <h4 className="text-md font-semibold text-white mb-2">Siga-nos</h4>
               <div className="flex space-x-4">
-                <Link href="https://instagram.com/SEUINSTAGRAM" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-textFooter hover:text-white">
+                <Link href="https://instagram.com/goodlifeseguros_placeholder" target="_blank" rel="noopener noreferrer" aria-label="Instagram da GoodLife Seguros" title="Instagram da GoodLife Seguros" className="text-textFooter hover:text-white">
                   <InstagramIconReal />
                 </Link>
                 {/* Adicionar outros ícones sociais aqui, se necessário */}

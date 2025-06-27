@@ -2,9 +2,27 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
+const pageTitle = 'Seguro de Vida';
+const pageDescription = 'Proteja o futuro de quem você ama com o Seguro de Vida da GoodLife Seguros. Coberturas personalizadas para sua tranquilidade e de sua família.';
+const pagePath = '/seguros/vida';
+
 export const metadata: Metadata = {
-  title: 'Seguro de Vida - GoodLife Seguros',
-  description: 'Proteja o futuro de quem você ama com o Seguro de Vida da GoodLife Seguros. Coberturas personalizadas para sua tranquilidade.',
+  title: pageTitle,
+  description: pageDescription,
+  alternates: {
+    canonical: pagePath,
+  },
+  openGraph: {
+    title: pageTitle,
+    description: pageDescription,
+    url: pagePath,
+    // images: ['/og-image-seguro-vida.png'], // Imagem OG específica
+  },
+  twitter: {
+    title: pageTitle,
+    description: pageDescription,
+    // images: ['/og-image-seguro-vida.png'],
+  },
 };
 
 // Exemplo de ícone para benefício
